@@ -11,13 +11,13 @@ const linkStyles = {
   color: "white",
 };
 function NavBar() {
-  return <div>
+  return (<div className="navbar">
  <NavLink
         to="/"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "green",
         }}
       >
         Home
@@ -28,7 +28,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "green",
         }}
       >
       Movies
@@ -39,7 +39,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "green",
         }}
       >
         Directors
@@ -50,7 +50,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "green",
         }}
       >
         Actors
@@ -58,7 +58,7 @@ function NavBar() {
 
 
 
-  </div>;
+  </div>);
 }
 
 export default NavBar;
